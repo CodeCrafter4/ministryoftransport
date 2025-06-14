@@ -13,7 +13,7 @@ const config = {
     jwtSecret: process.env.JWT_SECRET,
     jwtExpire: process.env.JWT_EXPIRE || '7d',
     cookieExpire: process.env.COOKIE_EXPIRE || 7,
-    clientUrl: process.env.CLIENT_URL
+    clientUrl: process.env.CLIENT_URL || 'https://ministryoftransport-client.vercel.app'
   }
 };
 

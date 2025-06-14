@@ -38,7 +38,12 @@ app.use(helmet({
 
 // CORS configuration
 app.use(cors({
-  origin: [config.clientUrl, 'http://localhost:3000'],
+  origin: [
+    config.clientUrl,
+    'http://localhost:3000',
+    'https://ministryoftransport-client.vercel.app',
+    'https://ministryoftransport-client-git-main-codecrafter4.vercel.app'
+  ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
